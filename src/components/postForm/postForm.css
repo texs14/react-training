@@ -1,0 +1,30 @@
+.post-form {
+    display: flex;
+    flex-flow: column;
+    width: 50%;
+    margin: auto;
+}
+
+.post-form__input, .post-form__textarea {
+    margin-bottom: 15px;
+    border-radius: 20px;
+    border: 1px #000 solid;
+    font-size: 18px;
+
+}
+
+.post-form__input {
+    height: 30px;
+    padding: 0 15px;
+}
+
+.post-form__textarea {
+    min-height: 450px;
+    height: fit-content;
+    padding: 10px 20px;
+}
+
+.post-form__label {
+    display: flex;
+    flex-flow: column;
+}

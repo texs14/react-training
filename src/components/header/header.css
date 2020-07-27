@@ -1,0 +1,22 @@
+header {
+    margin-bottom: 80px;
+}
+
+.menu__list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    justify-content: center;
+    position: relative;
+}
+
+.menu__item {
+    margin-left: 20px;
+}
+
+.menu__item-last {
+    position: absolute;
+    right: 5%;
+
+}
