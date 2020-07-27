@@ -5,8 +5,6 @@ import { addPost } from '../../actions/actions';
 import { v4 } from 'uuid';
 import './postForm.css';
 
-import autosize from 'autosize';
-autosize(document.querySelector('textarea'));
 
 const PostForm = ({ addPost }) => {
     let _imgUrl, _title, _paragraph;
