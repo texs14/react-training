@@ -6,6 +6,7 @@ import './header.css';
 
 const Header = ({ isAutorisation, logout }) => {
     const history = useHistory();
+    
 
     return  (
         <header>

@@ -48,6 +48,12 @@ const openEditPost = (id) => {
 const editPost = ({ title, imageUrl, id, paragraph }) => {
     const conf = window.confirm('Вы действительно хотите изменить пост?');
 
+    const regExSelectHTML = /\<\/?\w*\>|\<\w*.style=\"[\D\w]{28}|\&[\w\d]*\;/ig;
+
+    console.log(paragraph);
+    let discription = paragraph.replace(regExSelectHTML, '');
+    console.log(discription);
+
     if (conf) {
         return {
             type: 'EDIT_POST',
@@ -55,7 +61,8 @@ const editPost = ({ title, imageUrl, id, paragraph }) => {
                 title,
                 imageUrl,
                 id,
-                paragraph
+                paragraph : {__html: `${paragraph}`},
+                discription
             }
         }
     } else {
